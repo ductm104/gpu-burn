@@ -47,9 +47,17 @@ CCPATH can be specified to point to a specific gcc (default is
     GPU Burn
     Usage: gpu_burn [OPTIONS] [TIME]
     
+    -m 90 Gpu percent
     -d	Use doubles
     -tc	Use Tensor cores
     -h	Show this help message
     
     Example:
     gpu-burn -d 3600
+    gpu_burn -m 96 -d -tc 60
+    
+# Using Docker
+
+`docker build -t gpu-burn .`
+
+`docker run -it --rm --gpus all gpu-burn`
