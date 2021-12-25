@@ -54,7 +54,7 @@ CCPATH can be specified to point to a specific gcc (default is
     
     Example:
     gpu-burn -d 3600
-    gpu_burn -m 96 -d -tc 60
+    gpu_burn -m 96% -d -tc 60
     
 # Using Docker
 
